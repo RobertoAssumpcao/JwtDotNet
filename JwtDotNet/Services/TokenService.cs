@@ -18,7 +18,10 @@ public class TokenService
             Expires = DateTime.UtcNow.AddHours(2)
         };
 
-        new Claim("", "");
+        new Claim(ClaimTypes.Name, "");
+        new Claim(ClaimTypes.Email, "");
+        new Claim(ClaimTypes.GivenName, "");
+        new Claim(ClaimTypes.Role, "");
         
         var token = handler.CreateToken(tokenDescriptor);
         return handler.WriteToken(token);
