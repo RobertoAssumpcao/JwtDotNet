@@ -10,9 +10,9 @@ app.MapGet("/", (TokenService service) =>
 {
     var user = new User(
         1,
-        "André Baltieri",
-        "xyz@balta.io",
-        "https://balta.io/",
+        "teste",
+        "xyz@teste",
+        "https://teste/",
         "xyxz",
         new[] { "student", "premium" });
 
