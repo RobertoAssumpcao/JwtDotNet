@@ -1,6 +1,7 @@
 using System.Security.Claims;
 using System.Text;
 using JwtDotNet;
+using JwtDotNet.Extensions;
 using JwtDotNet.Models;
 using JwtDotNet.Services;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
