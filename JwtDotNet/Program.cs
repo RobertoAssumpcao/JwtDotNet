@@ -4,7 +4,9 @@ using JwtDotNet.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddTransient<TokenService>();
+builder.Services.AddAuthentication();
 var app = builder.Build();
+app.UseAuthentication();
 
 app.MapGet("/", (TokenService service) =>
 {
